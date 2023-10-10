@@ -1,10 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 10,
+    "height": 1,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/recorder", "tray", "memory", "battery", "custom/powermenu"],
+    "modules-right": ["custom/recorder", "tray", "memory", "battery"],
     "sway/mode": {
         "format": " {}"
     },
@@ -27,7 +27,7 @@
         }
     },
     "tray": {
-        "icon-size": 20,
+        "icon-size": 15,
         "spacing": 8
     },
     "sway/window": {
@@ -69,12 +69,10 @@
 	},
     "battery": {
         "format": "{capacity}%",
-        "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
-        "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
         "format-icons": ["", "", "", "", ""],
         "format-time": " ({H}h{M}m)",
-        "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
-        "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  Charged",
+        "format-charging": "{capacity}%",
+        "format-full": "Charged",
         "interval": 15,
         "states": {
             "warning": 25,
